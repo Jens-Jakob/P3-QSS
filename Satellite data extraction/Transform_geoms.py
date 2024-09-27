@@ -14,5 +14,3 @@ with rasterio.open(file_path) as dataset:
 print(geom)
 print('__________________________')
 print(transformed_geoms[:])
-
-#heyguys
