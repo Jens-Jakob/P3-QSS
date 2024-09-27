@@ -1,8 +1,7 @@
 import rasterio
 from rasterio import warp, features
 
-file_path = ('/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/test_billeder/Output_folder/output_crop_0.tif')
-
+file_path = ('Satellite data extraction/Satellite data/Output folder/output_crop_0.tif')
 
 with rasterio.open(file_path) as dataset:
     original_crs = dataset.crs
@@ -15,3 +14,5 @@ with rasterio.open(file_path) as dataset:
 print(geom)
 print('__________________________')
 print(transformed_geoms[:])
+
+#heyguys
