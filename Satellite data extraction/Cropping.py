@@ -1,14 +1,15 @@
 import rasterio
 import numpy as np
+from rasterio.windows import Window
 
-file_path = 'Satellite data extraction/Satellite data/1.tif'
-folder_path = 'Satellite data extraction/Satellite data/Output folder'
+file_path = '/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/Billede_data/Tester1.tif'
+folder_path = '/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/test_billeder/Output_folder'
 
 img_o = rasterio.open(file_path)
 img = img_o.read()
 img_reduced = img[:3, :, :]
-image_shape = np.shape(img_reduced)
 
+image_shape = np.shape(img_reduced)
 height = image_shape[1]
 width = image_shape[2]
 crop_size = 480
