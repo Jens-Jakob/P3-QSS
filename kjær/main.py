@@ -1,6 +1,6 @@
 import os
 from feature_extractor import extract_features, resnet_feature_extractor, resnet152_feature_extractor
-from image_loader import load_and_preprocess_image, data_loader
+from image_loader import load_and_preprocess_image, data_loader2
 from similarity_calculator import calculate_similarity
 from utils import get_drone_images, get_satellite_images
 
@@ -27,15 +27,17 @@ drone_folder_path = r"/Users/jens-jakobskotingerslev/Desktop/P3/Dataset/vpair/qu
 satellite_folder_path = r"/Users/jens-jakobskotingerslev/Desktop/P3/Dataset/vpair/reference_views"  # Folder containing satellite images
 
 
-def main(drone_folder_path, satellite_folder_path, top_n=3):
-
+def main(drone_folder_path, satellite_folder_path, top_n=3, max_images=200):
     # Initialize neural Network
-    model = resnet152_feature_extractor()
+    model = resnet_feature_extractor()
+    # Load the selected amount of images using data_loader2
+    drone_image_list = get_drone_images(drone_folder_path)
+    satellite_image_list = get_satellite_images(satellite_folder_path)
 
-    # Load the selected amount of images
-    drone_images = data_loader(get_drone_images(drone_folder_path))
-    satellite_images = data_loader(get_satellite_images(satellite_folder_path))
-
+    # Get the "filtered list of images"
+    drone_images = data_loader2(drone_image_list, max_images)
+    satellite_images = data_loader2(satellite_image_list, max_images)
+    # Empty list to store the satellite features
     # Empty list to store the satellite features
     satellite_features = []
 

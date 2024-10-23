@@ -4,6 +4,17 @@ from PIL import Image, UnidentifiedImageError
 import torchvision.transforms as transforms
 import torch
 
+
+def data_loader2(image_list, max_images=100):
+
+    #Generate the list of image names from 00001.png to max_images
+    selected_image_names = [f"{str(i).zfill(5)}.png" for i in range(1, max_images + 1)]
+
+    #Filter the image list to include only those with the chosen names
+    filtered_images = [img_path for img_path in image_list if os.path.basename(img_path) in selected_image_names]
+
+    return filtered_images
+
 def data_loader(image_list, max_images=100):
     """Get the first 'max_images' from the original list."""
     return image_list[:max_images]
