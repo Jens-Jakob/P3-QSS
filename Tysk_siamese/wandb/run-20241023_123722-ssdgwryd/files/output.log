@@ -1,0 +1,20 @@
+Epoch [1/10] completed with Average Loss: 0.9401
+Epoch [2/10] completed with Average Loss: 0.5709
+Epoch [3/10] completed with Average Loss: 0.2952
+Epoch [4/10] completed with Average Loss: 0.2473
+Epoch [5/10] completed with Average Loss: 0.3421
+Traceback (most recent call last):
+  File "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/Train.py", line 84, in <module>
+    train()
+  File "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/Train.py", line 77, in train
+    torch.save(model.state_dict(), checkpoint_path)
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parent directory checkpoints does not exist.

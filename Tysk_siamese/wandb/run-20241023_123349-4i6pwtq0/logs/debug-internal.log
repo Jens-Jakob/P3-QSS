@@ -1,0 +1,16 @@
+{"time":"2024-10-23T12:33:49.387454+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-10-23T12:33:49.387572+02:00","level":"INFO","msg":"created symlink","path":"/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/wandb/run-20241023_123349-4i6pwtq0/logs/debug-core.log"}
+{"time":"2024-10-23T12:33:49.50362+02:00","level":"INFO","msg":"created new stream","id":"4i6pwtq0"}
+{"time":"2024-10-23T12:33:49.503669+02:00","level":"INFO","msg":"stream: started","id":"4i6pwtq0"}
+{"time":"2024-10-23T12:33:49.503749+02:00","level":"INFO","msg":"sender: started","stream_id":"4i6pwtq0"}
+{"time":"2024-10-23T12:33:49.503725+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"4i6pwtq0"}}
+{"time":"2024-10-23T12:33:49.503808+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"4i6pwtq0"}}
+{"time":"2024-10-23T12:33:49.938713+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-23T12:35:20.678397+02:00","level":"INFO","msg":"stream: closing","id":"4i6pwtq0"}
+{"time":"2024-10-23T12:35:20.678723+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-23T12:35:20.679293+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-23T12:35:23.726483+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-23T12:35:24.219684+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"4i6pwtq0"}}
+{"time":"2024-10-23T12:35:24.220049+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"4i6pwtq0"}}
+{"time":"2024-10-23T12:35:24.220449+02:00","level":"INFO","msg":"sender: closed","stream_id":"4i6pwtq0"}
+{"time":"2024-10-23T12:35:24.220972+02:00","level":"INFO","msg":"stream: closed","id":"4i6pwtq0"}

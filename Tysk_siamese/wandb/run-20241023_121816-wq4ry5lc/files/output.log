@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/Train.py", line 78, in <module>
+    train()
+  File "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/Train.py", line 47, in train
+    dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 350, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/utils/data/sampler.py", line 142, in __init__
+    if not isinstance(self.num_samples, int) or self.num_samples <= 0:
+                      ^^^^^^^^^^^^^^^^
+  File "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/lib/python3.12/site-packages/torch/utils/data/sampler.py", line 149, in num_samples
+    return len(self.data_source)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'Triplet_Loader' has no len()

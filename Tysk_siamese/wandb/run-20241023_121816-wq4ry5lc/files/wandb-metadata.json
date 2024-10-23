@@ -1,0 +1,17 @@
+{
+  "os": "macOS-14.6.1-arm64-arm-64bit",
+  "python": "3.12.6",
+  "startedAt": "2024-10-23T10:18:16.345174Z",
+  "program": "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/Train.py",
+  "codePath": "Tysk_siamese/Train.py",
+  "git": {
+    "remote": "https://github.com/Jens-Jakob/P3-QSS.git",
+    "commit": "c1f8081289685d512c640a2361f8faf6d3264b0c"
+  },
+  "email": "KM44VW@student.aau.dk",
+  "root": "/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese",
+  "host": "h413.aau1x.klient.satellit.site.aau.dk",
+  "username": "jens-jakobskotingerslev",
+  "executable": "/Users/jens-jakobskotingerslev/Desktop/P3/Kodning/.venv/bin/python",
+  "codePathLocal": "Train.py"
+}

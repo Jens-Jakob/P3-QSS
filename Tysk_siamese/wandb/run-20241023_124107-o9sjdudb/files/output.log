@@ -1,0 +1,13 @@
+Epoch [1/10] completed with Average Loss: 1.0337
+Epoch [2/10] completed with Average Loss: 0.4014
+Epoch [3/10] completed with Average Loss: 0.2721
+Epoch [4/10] completed with Average Loss: 0.2492
+Epoch [5/10] completed with Average Loss: 0.2400
+Model checkpoint saved at checkpoints/triplet_model_epoch_5.pth
+Epoch [6/10] completed with Average Loss: 0.1827
+Epoch [7/10] completed with Average Loss: 0.1932
+Epoch [8/10] completed with Average Loss: 0.1542
+Epoch [9/10] completed with Average Loss: 0.1206
+Epoch [10/10] completed with Average Loss: 0.1265
+Model checkpoint saved at checkpoints/triplet_model_epoch_10.pth
+Training completed.

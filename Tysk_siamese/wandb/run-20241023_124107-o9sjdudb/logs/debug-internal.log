@@ -1,0 +1,17 @@
+{"time":"2024-10-23T12:41:07.534917+02:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-10-23T12:41:07.53495+02:00","level":"INFO","msg":"created symlink","path":"/Users/jens-jakobskotingerslev/Documents/GitHub/P3-QSS/Tysk_siamese/wandb/run-20241023_124107-o9sjdudb/logs/debug-core.log"}
+{"time":"2024-10-23T12:41:07.647137+02:00","level":"INFO","msg":"created new stream","id":"o9sjdudb"}
+{"time":"2024-10-23T12:41:07.647256+02:00","level":"INFO","msg":"stream: started","id":"o9sjdudb"}
+{"time":"2024-10-23T12:41:07.647399+02:00","level":"INFO","msg":"sender: started","stream_id":"o9sjdudb"}
+{"time":"2024-10-23T12:41:07.647369+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"o9sjdudb"}}
+{"time":"2024-10-23T12:41:07.647571+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"o9sjdudb"}}
+{"time":"2024-10-23T12:41:07.955983+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-23T12:44:09.78576+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-23T12:44:09.786387+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-23T12:44:10.79347+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.434977375},{"desc":"uploading config.yaml","runtime_seconds":0.217723417,"progress":"741B/741B"},{"desc":"uploading output.log","runtime_seconds":0.217711041,"progress":"640B/640B"}],"total_operations":3}}
+{"time":"2024-10-23T12:44:12.896782+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-23T12:44:14.16894+02:00","level":"INFO","msg":"stream: closing","id":"o9sjdudb"}
+{"time":"2024-10-23T12:44:14.168978+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"o9sjdudb"}}
+{"time":"2024-10-23T12:44:14.169007+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"o9sjdudb"}}
+{"time":"2024-10-23T12:44:14.169023+02:00","level":"INFO","msg":"sender: closed","stream_id":"o9sjdudb"}
+{"time":"2024-10-23T12:44:14.169527+02:00","level":"INFO","msg":"stream: closed","id":"o9sjdudb"}
