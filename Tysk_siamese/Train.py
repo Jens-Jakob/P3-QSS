@@ -21,15 +21,18 @@ wandb.init(
     }
 )
 
-def train(save_interval=5, checkpoint_dir="checkpoints"):
+def train(save_interval=2, checkpoint_dir="checkpoints"):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     queries_folder = '/Users/jens-jakobskotingerslev/Desktop/P3/Dataset/vpair/queries'
     reference_folder = '/Users/jens-jakobskotingerslev/Desktop/P3/Dataset/vpair/reference_views'
 
     transform = transforms.Compose([
-        transforms.Resize((32, 32)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),  # Random color adjustments
+        transforms.RandomHorizontalFlip(),  # Random horizontal flip
+        transforms.RandomRotation(degrees=30),  # Random rotation within a specified range
+        transforms.Resize((224, 224)),  # Resize to the desired dimensions
+        transforms.ToTensor(),  # Convert to Tensor
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Normalize
     ])
 
     dataset = Triplet_Loader(queries_folder, reference_folder, transform)

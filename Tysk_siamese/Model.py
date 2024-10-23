@@ -23,16 +23,27 @@ class SiameseNetwork(nn.Module):
             nn.Conv2d(128, 256, kernel_size=3, stride=1, padding=1),
             nn.ReLU(inplace=True),
             nn.BatchNorm2d(256),
+
+            nn.Conv2d(256, 512, kernel_size=3, stride=1, padding=1),
+            nn.ReLU(inplace=True),
+            nn.BatchNorm2d(512),
             nn.AdaptiveAvgPool2d((1, 1))
         )
 
         self.fc = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(256 * 1 * 1, 512),
+            nn.Linear(512 * 1 * 1, 512),
             nn.ReLU(inplace=True),
-            nn.Dropout(0.2),
+
+            nn.Linear(512, 1024),
+            nn.ReLU(inplace=True),
+
+            nn.Linear(1024, 512),
+            nn.ReLU(inplace=True),
+
             nn.Linear(512, 256),
             nn.ReLU(inplace=True),
+            nn.Dropout(0.5),
             nn.BatchNorm1d(256)
         )
 

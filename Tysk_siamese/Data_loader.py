@@ -2,6 +2,7 @@ import os
 import random
 from PIL import Image
 from torch.utils.data import Dataset
+import torchvision.transforms as transforms
 
 class Triplet_Loader(Dataset):
     def __init__(self, queries, reference_views, transforms=None, max_images=-1):
@@ -43,3 +44,7 @@ class Triplet_Loader(Dataset):
             negative_image = self.transforms(negative_image)
 
         return anchor_image, positive_image, negative_image
+
+
+
+
